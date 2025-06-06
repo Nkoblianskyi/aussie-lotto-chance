@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { Clock, Shield, Users, Award, Zap, Globe } from "lucide-react"
+import { Clock, Shield, Users, Award, Zap } from "lucide-react"
 import Link from "next/link"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
@@ -216,13 +216,15 @@ export default function HomePage() {
           <div className="relative group animate-fade-in-up delay-700">
             <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform duration-500"></div>
             <div className="relative bg-gradient-to-r from-emerald-700 to-teal-700 p-12 rounded-3xl border-4 border-emerald-300 hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/25">
-              <Globe className="w-16 h-16 text-white mb-6 hover:animate-spin transition-all duration-300" />
-              <h3 className="text-3xl font-bold text-white mb-6">Serving Australia with Pride</h3>
+              <div className="w-16 h-16 text-white mb-6 flex items-center justify-center text-6xl hover:animate-bounce transition-all duration-300">
+                🗺️
+              </div>
+              <h3 className="text-3xl font-bold text-white mb-6">Proudly Serving Victoria</h3>
               <p className="text-white/90 text-lg leading-relaxed max-w-4xl">
-                From the bustling streets of Sydney to the cultural heart of Melbourne, from the tropical beauty of
-                Queensland to the wine regions of South Australia - Aussie Lotto Chance connects players across the
-                continent. We're not just a platform; we're part of the Australian lottery tradition, bringing
-                communities together through the shared excitement of possibility.
+                From the vibrant laneways of Melbourne to the stunning coastlines of the Surf Coast, from the wine
+                regions of the Yarra Valley to the goldfields of Ballarat - Aussie Lotto Chance is proud to serve the
+                great state of Victoria. We understand the unique spirit of Victorians and are committed to providing
+                the best lottery experience for our local community.
               </p>
             </div>
           </div>
@@ -729,7 +731,7 @@ export default function HomePage() {
                     <span className="text-white text-2xl font-bold">"</span>
                   </div>
                   <div
-                    className={`bg-gradient-to-br ${item.color} p-8 pt-12 rounded-3xl border-4 ${item.border} hover:scale-105 hover:rotate-1 transition-all duration-300 cursor-pointer hover:shadow-2xl`}
+                    className={`bg-gradient-to-br ${item.color} p-8 pt-12 rounded-3xl border-4 ${item.border} hover:scale-110 hover:rotate-1 transition-all duration-300 cursor-pointer hover:shadow-2xl`}
                   >
                     <blockquote className="text-white text-lg leading-relaxed mb-6 font-medium">
                       {item.quote.split(item.highlight).map((part, i) => (
