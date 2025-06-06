@@ -22,7 +22,7 @@ export default function LoginPage() {
     // Simulate login
     setShowSuccess(true)
     setTimeout(() => {
-      router.push("/lottery-info")
+      router.push("/")
     }, 2000)
   }
 
